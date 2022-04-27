@@ -19,7 +19,6 @@ if(navClose){
     })
 }
 
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav_link')
 
@@ -61,7 +60,7 @@ tabs.forEach(tab =>{
         tabContents.forEach(tabContent =>{
             tabContent.classList.remove('qualification_active')
         })
-        target.classList.add('qualification_Active')
+        target.classList.add('qualification_active')
 
         tab.forEach(tab =>{
             tab.classList.remove('qualification_active')
@@ -70,10 +69,14 @@ tabs.forEach(tab =>{
     })
 })      
 
-
-
 /*==================== SERVICES MODAL ====================*/
+const modalViews= document.querySelectorAll('.services_modal'),
+      modalBtns = document.querySelectorAll('.services_button'),
+      modalCloses= document.querySelectorAll('.services_modal-close')
 
+let modal = function(modalClick){
+    modalViews[modalClick].classList('active-modal')
+}      
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
