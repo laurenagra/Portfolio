@@ -94,7 +94,7 @@ modalCloses.forEach((modalClose) => {
 /*==================== PORTFOLIO SWIPER  ====================*/
 // import Swiper from 'swiper/swiper-bundle.esm.js';
 //     import 'swiper/swiper-bundle.css';
-    let swiper = new Swiper('.portfolio_container', {
+    let swiperPortfolio = new Swiper('.portfolio_container', {
       cssMode: true,
       loop: true,
       navigation: {
@@ -109,7 +109,22 @@ modalCloses.forEach((modalClose) => {
 
 
 /*==================== TESTIMONIAL ====================*/
+let swiperTestimonial = new Swiper('.testimonial_container', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
 
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints:{
+        568:{
+            slidesPerView: 2,
+        }
+    }
+  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
